@@ -1,0 +1,133 @@
+.entete
+{
+    .banier img{
+        width: 100%;
+    }
+    list-style: none;
+    
+}
+.navbar
+{
+    margin-left:20% ;
+    
+}
+ a
+    {
+        text-decoration:none ;
+        color: rgb(32, 120, 150);
+        font-size: 200%;
+        justify-content: space-between;
+        margin-left: 5%;
+        border: 3px solid burlywood;
+        margin: 2%;
+        padding: 2%;
+      
+    }
+li
+{
+    margin: 2%;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+
+#eq
+{
+    border: 3px solid burlywood;
+    padding-left: 5%;
+    width: 15%;
+    height: 25%;
+    margin-top: 10%;
+    color: white;
+    margin-left: 2%;
+}
+
+td{
+    margin: 2%;
+    color: wheat;
+}
+.tables
+{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin:3%
+
+   
+}
+.cercle
+{
+    border: 2px solid burlywood;
+    width: 25%;
+    padding: 2%;
+    color: white;
+    margin-right: 2%;
+}
+table
+{
+    border-collapse: collapse;
+    width: 15%;
+    color: white;
+}
+ th,td,tr {
+    border: 2px solid burlywood;
+}
+caption
+{
+    font-size: 150%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:aliceblue
+}
+.exercise1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ex3
+{
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    border: 3px white solid;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.Les_sections
+{
+    background-color: rgb(56, 4, 56);
+}
+.ex2
+{
+    color: white;
+    display: flex;
+   
+    width: 90%;
+    justify-content: space-around;
+    border: 3px white solid;
+    margin: auto;
+    margin-bottom: 2%;
+    padding: 2%;
+    align-items: center;
+
+}
+.prd
+{
+    border: white solid 8px;
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+.body
+{
+    display: flex;
+}
