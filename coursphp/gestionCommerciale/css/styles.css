@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: #333; /* Texte en noir */
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #007bff; /* Bleu */
 }
 
 form {
@@ -30,6 +32,7 @@ form {
 
 label {
     margin-bottom: 10px;
+    color: #0000ff; /* Bleu */
 }
 
 input[type="text"],
@@ -42,21 +45,25 @@ input[type="password"] {
 
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #ff6f61;
+    background-color: #007bff; /* Bleu */
+    color: #fff; /* Texte en blanc */
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    
 }
 
 p {
     text-align: center;
     margin-top: 10px;
+    color: #000; /* Noir */
 }
 
 a {
-    background-color: #ff6f61;
+
+    color: #007bff; /* Texte en blanc */
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
 
 a:hover {

@@ -147,7 +147,7 @@ function afficheall()
     display();
     ?>
 </div>
-<head><link rel="stylesheet" href="css/prd.css"></head>
+<head><link rel="stylesheet" href="css/prd.css"<?php echo time(); ?>></head>
 
 <body>
   <div class="content">
@@ -202,7 +202,7 @@ function afficheall()
           </div>
           <div>
             <label for="prix">Prix</label>
-            <input type="number" name="prix" id="prix">
+            <input type="number" min="100" step="100" name="prix" id="prix">
           </div>
           <div class="form-group">
             <label for="images">Image du produit :</label>

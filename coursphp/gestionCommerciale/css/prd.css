@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Texte en noir */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff; /* Bleu */
+  margin-bottom: 20px;
+}
+
+.formul {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #007bff; /* Bleu */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff; /* Texte en blanc */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Bleu */
+  color: #fff; /* Texte en blanc */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1%;
+  width: 95%;
+}
+
+section {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff; /* Bleu */
+  color: #fff; /* Texte en blanc */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.search-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #007bff; /* Bleu */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #fff; /* Texte en blanc */
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#search-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff; /* Bleu */
+  color: #fff; /* Texte en blanc */
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#search-results li {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+#search-results li img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+#search-results li img:hover {
+  transform: scale(0.9);
+}

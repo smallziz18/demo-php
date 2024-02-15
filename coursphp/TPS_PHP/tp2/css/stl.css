@@ -1,0 +1,36 @@
+/* Reset CSS */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the result container */
+.result-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for labels */
+.label {
+    font-weight: bold;
+    color: #333; /* Couleur de texte plus foncée */
+}
+
+/* Styles for content paragraphs */
+.result-container p {
+    color: #555; /* Couleur de texte légèrement plus foncée */
+    margin-bottom: 10px;
+}
+
+/* Styles for images */
+.photos-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

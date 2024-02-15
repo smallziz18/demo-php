@@ -1,11 +1,11 @@
 <?php
-$nom;
-$prenom;
-$age;
-$sexe;
-$dtn;
+global $nom;
+global $prenom;
+global $age;
+global $sexe;
+global $dtn;
 $option = [];
-$classe;
+global $classe;
 if (isset($_POST['nom'])) {
   echo  "votre nom est : ";
   $nom = $_POST['nom'];

@@ -35,7 +35,7 @@ if ($con)
    $a= $rqstmt->execute();
    if($a)
    {
-    header("location: index.php");
+    header("location: Accueil.php");
    }
    else
    header("location: inscription.php");
