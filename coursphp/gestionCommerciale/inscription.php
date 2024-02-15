@@ -16,6 +16,8 @@
             <input type="text" id="prenom" name="prenom" required>
             <label for="email"> Email :</label>
             <input type="email" name="email" id="email">
+            <label for="login"> Login :</label>
+            <input type="text" name="login" id="login">
            
             
             <label for="password">Mot de passe :</label>

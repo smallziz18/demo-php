@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php
@@ -31,7 +34,7 @@ require_once 'mes_fonctions/fonctions.php';
             <div class="container">
                 <h2>Nos Services</h2>
                 <div class="service">
-                    <video src="image/B1.mp4" autoplay controls loop></video>
+                    <video src="image/video.mp4" autoplay controls loop></video>
                     <h3>Service 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>

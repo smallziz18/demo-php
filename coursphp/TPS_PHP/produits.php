@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 require_once 'mes_fonctions/fonctions.php';
 tete();
 ?>
@@ -6,7 +9,7 @@ tete();
 
 <body class="produit">
     <form action="traitement.php" method="post" enctype="multipart/form-data">
-        <h1>Ajouter un produit</h1>
+        <h1>Ajouter un produit pour <?php echo $_SESSION['nom']?></h1>
 
         <form action="traitement.php" method="post" enctype="multipart/form-data">
             <div class="form-group">

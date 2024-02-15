@@ -10,8 +10,8 @@
     <div class="container">
         <h1>Connexion</h1>
         <form action="login.php" method="POST">
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Login :</label>
+            <input type="text" id="login" name="login" required  value="<?php if(($_COOKIE['login']) !== null && !empty(($_COOKIE['login']))) echo $_COOKIE['login'] ?>">
             
             <label for="password">Mot de passe :</label>
             <input type="password" id="password" name="password" required>

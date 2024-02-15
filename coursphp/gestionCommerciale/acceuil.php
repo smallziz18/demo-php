@@ -1,5 +1,6 @@
 <?php
-include_once 'entete.php'
+include_once 'entete.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,10 +15,12 @@ include_once 'entete.php'
 
     <div class="contenue">
         <section class="hero">
-            <h1>Bienvenue sur notre site web</h1>
+            <h1>Bienvenue sur notre site web  : <?php if(!empty($_SESSION["prenom"] ) &&!empty($_SESSION["nom"] ))
+            {echo $_SESSION["prenom"] ; echo" " ; echo $_SESSION["nom"];}
+            ?></h1>
             <p>Expérience utilisateur exceptionnelle et produits de haute qualité.</p>
         </section>
-        <!-- Ajoutez ici le contenu de la page d'accueil -->
+
 
  </div>
  <div class="bas">

@@ -1,3 +1,7 @@
+<?php
+session_start();
+setcookie("login",time()+3600*24*365);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
         <h1>Login</h1>
         <form method="post">
             <div class="txt_field">
-                <input type="text" name="user" required>
+                <input type="text" name="user" required placeholder="<?php echo $_COOKIE['login']?>">
                 <span></span>
                 <label>Username</label>
             </div>
@@ -37,8 +41,14 @@ if (isset($_POST['user']) && ($_POST['mdp'])) {
     $motdp = $_POST['mdp'];
     if ($nom == 'Ngagne' && $motdp == 'Demba') {
         header("location: index2.php");
+        $_SESSION['nom']=$nom;
+        $_COOKIE['login']=$nom;
+        $_SESSION['mdp']=$motdp;
         exit;
+       
     }
+  
+
     header("location: autentif.php");
     exit;
 }

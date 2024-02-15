@@ -62,13 +62,17 @@ if (isset($_FILES['photo'])) {
     echo "<img src='$img'/>";
   }
   echo "</br>";
-  $con = new PDO('mysql:host=localhost;dbname=Etudiant', "root", "");
+  $con = new PDO('mysql:host=localhost;dbname=Etudiant', "smallziz", "93227");
   echo "</br>";
   $req2 = "insert into inscription values('Gueye','Ndeye Sylla', 22,'feminin','licence3','bI','05/02/2001')";
   $req = "insert into inscription values('$nom','$prenom', $age,'$sexe','$classe','$option','$dtn')";
   if ($con) {
     echo ' connexion reussi';
-    $con->exec($req);
+   $res= $con->exec($req);
+   if($res)
+    echo 'ajout resussit';
+    else
+    echo 'erreur';
   } else
     echo 'raté';
 }

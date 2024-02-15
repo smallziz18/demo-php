@@ -32,7 +32,7 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="email"],
+input[type="text"],
 input[type="password"] {
     padding: 10px;
     border: 1px solid #ccc;
@@ -46,6 +46,7 @@ input[type="submit"] {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    
 }
 
 p {

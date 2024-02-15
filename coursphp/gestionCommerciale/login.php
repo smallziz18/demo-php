@@ -1,4 +1,5 @@
 <?php
+
 function sanitizeInput($input)
 {
     $input = trim($input);
@@ -6,30 +7,41 @@ function sanitizeInput($input)
     $input = htmlspecialchars($input);
     return $input;
 }
-$mdp = (sanitizeInput($_POST["password"]));
-$email= sanitizeInput($_POST["email"]);
+$md = (sanitizeInput($_POST["password"]));
+ $mdp=sha1($md);
+$login= sanitizeInput($_POST["login"]);
 
 $con = new PDO('mysql:host=localhost;dbname=commercial', "smallziz", "93227");
-$p=0;$t=0;$e=0;
+
 if ($con)
 {
-    $req="select * from user where mdp=$mdp";
+    $req="select * from user where mdp=? and login=?";
     $rqstmt=$con->prepare($req);
-    $rqstmt->bindColumn(1,$mp);
-    $rqstmt->bindColumn(2,$em);
-    $rqstmt->execute();
-    while($row=$rqstmt->fetch(PDO::FETCH_BOUND))
-    {
-        $p=$mdp;$e=$email;
-    }
+    
+    $rqstmt->execute(array($mdp,$login));
+    
 
 }
 else
 echo'erreur';
-if($p=$mdp && $e=$email)
+
+if($rqstmt->rowCount()>0)
+   {
+  
+    session_start();
+    
+    $row=$rqstmt->fetch();
+    $_SESSION['nom']= $nom=$row['non'];
+    $_SESSION['prenom']=$prenom=$row['prenom'];
+    $log=$row['login'];
+    setcookie('login',$log,time()+365*24*3600);
+
+
+    
     header("location: acceuil.php");
+   }
 else
-    header("location: index.php");
+    echo "erreur sur vos informations"
 
 
 ?>

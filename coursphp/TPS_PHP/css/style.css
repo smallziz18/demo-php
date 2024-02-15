@@ -17,7 +17,6 @@
         color: rgb(32, 120, 150);
         font-size: 200%;
         justify-content: space-between;
-        margin-left: 5%;
         border: 3px solid burlywood;
         margin: 2%;
         padding: 2%;
@@ -53,7 +52,8 @@ td{
     display: flex;
     align-items: center;
     color: white;
-    margin:3%
+
+
 
    
 }
@@ -70,6 +70,8 @@ table
     border-collapse: collapse;
     width: 15%;
     color: white;
+    margin: 1%;
+
 }
  th,td,tr {
     border: 2px solid burlywood;
